@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="shortcut icon" href="./img/logo(janvi).png" type="image/x-icon">
+    <title>Home || portfolio Responsive Janvi Vaghela</title>
+    <style>
+          body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            /* height: 100%;             */
+            
+          }
+           #header{
+             /* height: 95vh; */
+             background-image: url("img/leone-venter-VieM9BdZKFo-unsplash.jpg");
+             background-size: 100vw 100vh;
+               
+             /* background-color: #DC965A; */
+             
+            
+          }
+          #header .together{
+            background-color: black;
+            color: aliceblue;
+            height: 10vh;
+            width: 100%;
+           display: flex;
+            position: fixed;
+          }
+
+
+
+          #header .logo{
+            color: white;
+            padding-left: 4em;
+            font-size: 30px;
+            padding-top: 0.7em;
+            width: 50%;
+            opacity: 0;
+            animation: Slideright 1s ease forwards;
+          }
+          #header .navbar{
+           text-align: center;
+           padding-top: 1.5em;
+           width: 50%;
+           font-size: 20px;
+           padding-left: 5em;          
+          }
+          .navbar a{
+            display: inline-block;
+            opacity: 0;
+            animation: Slidetop .5s ease forwards;
+            animation-delay: calc(.2s * var(--i));
+
+          }
+          .navbar a:hover,
+           .navbar a.active{
+            color: aqua;
+            transition: all 0.9s ;
+          }
+          #header a{
+           text-decoration-line: none;
+           color: white;
+          }
+          .navbar .a2{
+            padding-left: 1em;
+          }
+          .navbar .a3{
+            padding-left: 1em;
+          }
+          .navbar .a4{
+            padding-left: 1em;
+          }
+          .navbar .a5{
+            padding-left: 1em;
+          }
+
+
+         
+
+        .container .second_h2{
+             padding-top: 9em;
+             padding-left: 4em;
+             font-size: 30px;
+             color: aliceblue;
+            
+
+        }
+        .container h1{
+            
+             padding-left: 8em;
+             font-size: 70px;
+             color: rgb(188, 97, 31);
+             padding-bottom: 0;
+             margin-bottom: 0;
+           
+        }
+
+        .container .third_h2{
+            padding-top: 0;
+            margin-top: 0;
+             padding-left: 16em;
+             font-size: 40px;
+             color: aliceblue;
+        }
+        #about_page{
+          display: flex;
+          width: 100vw;
+          height: 100vh;
+          padding-bottom: 3em;
+        }
+        #about_page .first_part{  
+              width: 45%;
+        }
+        #about_page .first_part img{
+          width: 650px;
+          padding-top: 7em;
+          margin-top: 0; 
+          opacity: 0;
+         
+          animation: Zoomin 1s ease forwards;
+          animation-delay:1s;     
+          padding-left: 0;
+          margin-left: 0;    
+        
+         
+        }
+        #about_page .second_part{
+          width: 50%;
+          padding-left: 0;
+          margin-left: 0;
+    
+          padding-right: 0;
+          margin-right: 0;
+        }
+        #about_page .second_part h2{
+          animation: Slideleft 1s ease forwards;
+          animation-delay:1s;
+          padding-right: 0;
+          margin-right: 0;    
+        }
+     
+      #about_page h2{
+          
+          /* border: 2px solid red; */
+          padding-left: 5em;
+          font-size: 43px;      
+          
+          padding-bottom: 0;
+          margin-bottom: 1em;
+          
+        }
+        #about_page h3{
+          font-size: 22px;
+          padding-left: 3em;
+          padding-top: 0em;
+          margin-top: 0;
+          margin-bottom: 0;
+          color: rgb(216, 79, 30);
+        }
+        #about_page p{
+
+         padding-top: 1em;
+          padding-left: 3em;
+          margin-left: 0;
+          font-size: 25px;
+
+        }
+        .mini_links{
+          display: flex;
+          animation: Slideleft 1s ease forwards;
+          animation-delay:1s;
+          padding-left: 0;
+          margin-left: 3em; 
+          width: 50%  ;
+          padding: 0;
+          padding-right: 0;
+          margin-right: 0;
+        
+        }
+        .mini_links li{
+          padding: 0.5em;
+          margin: 2em;
+          font-size: 20px;
+        }
+        .mini_links .one li, .second li{
+          list-style: none;
+        }    
+        .one{
+          padding-right: 0;
+          margin-right:0 ;
+        }
+        .one .li4{
+          padding-top: 1em;
+        }
+        .one .li3{
+          padding-top: 1em;
+        }
+        .mini_links h2{
+          padding-left: 0;
+          padding-top: 0;
+          margin-left: 0;
+         
+        }
+        .h2_containt {
+          border: 2px solid red;
+          width: 50px;
+        }
+        .h2_containt h2{
+          padding-left: 0;
+          margin-left: 0;
+          width: 100px;
+          
+        }
+        .h2_containt .f1{
+          padding-top:0 ;
+
+        }
+        .second   .li3{
+          padding-top: 1em;
+        }
+        .second   .li4{
+          padding-top: 1em;
+        }
+
+        #service_page{
+          height: 90vh;
+          background-color: #FFF5EC;
+        }
+
+        #service_page .service_h1{
+          padding-left: 16em;
+          padding-top: 2em;
+          font-size: 40px; 
+          animation: Slideright 1s ease forwards;
+             animation-delay: 1s;
+
+        }
+        #service_page .service_p{
+          padding-left: 16em;
+          font-size: 20px;
+          animation: Slidetop 1s ease forwards;
+          animation-delay: 1s;
+        }
+        .service_container{
+          display: flex;
+          padding-top: 2em;
+          margin: 2em;
+         justify-content: space-around;        
+         height: 70vh;
+         padding-bottom: 3em;
+         margin-bottom: 3em;
+        }
+        .service_container img{
+          opacity: 0;
+          animation: Slidetop 1s ease forwards;
+          animation-delay: calc(.7s *var(--j));
+        }
+        .service_container h2{
+          opacity: 0;
+          animation: Slideleft 1s ease forwards;
+          animation-delay: 1s;
+
+        }
+        .service_container p{
+          opacity: 0;
+          animation: Slideright 2s ease forwards;
+          animation-delay: 2s;
+        }
+        .service_container .first{
+           padding-top: 2em;
+           padding-left: 1em;
+           background-color:white;
+        }
+        .service_container .first:hover{
+          background-color: #DC965A;
+          transition: all 0.6s ease-in-out;
+        }
+        .service_container .second{
+           padding-top: 2em;
+           padding-left: 1em;
+           background-color:white;
+
+        }
+        .service_container .second:hover{
+          background-color: #DC965A;
+          transition: all 0.6s ease-in-out;
+        }
+        .service_container .third{
+           padding-top: 2em;
+           padding-left: 1em;
+           background-color:white;
+        }
+        .service_container .third:hover{
+          background-color: #DC965A;
+          transition: all 0.6s ease-in-out;
+        }
+        .service_container .four{
+           padding-top: 2em;
+           padding-left: 1em;
+           background-color:white;
+        }
+        .service_container .four:hover{
+          background-color: #DC965A;
+          transition: all 0.6s ease-in-out;
+        }
+        
+
+        .service_container .first{
+          height: 40vh;   
+          width: 250px;  
+          border: 2px solid white;  
+        }
+        .service_container .second{
+          height: 40vh;
+          width: 250px;  
+          border: 2px solid white;          
+        }
+        .service_container .third{
+          height: 40vh; 
+          width: 250px;  
+          border: 2px solid white;         
+        }
+        .service_container .four{
+          height: 40vh;       
+          width: 250px;  
+          border: 2px solid white;   
+        }
+        .service_container .first img{
+          height: 60px;
+          width: 60px;
+        }
+        .service_container .second span{
+          height: 100px;
+          width: 100px;
+        }
+        .service_container .first p{
+          font-size: 18px;
+        }
+        .service_container .second p{
+          font-size: 18px;
+        }
+
+         .service_container .third p{
+          font-size: 18px;
+
+        } 
+        .service_container .four p{
+          font-size: 18px;
+        }
+ 
+
+        /* //skills css/// */
+        #skill_experience{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          height: 95vh;
+          width: 100vw;
+          padding-top: 6em;
+          
+          
+        }
+        #skill_experience .skills{
+          width: 40vw;
+          padding-top: 2em;
+          background-color: #DC965A;  
+          text-align: center;
+          font-size: 20px;
+          color: whitesmoke;
+          height: 70vh;
+        }
+        .skills h1{
+            animation: Slidetop 2s ease forwards;
+            animation-delay: 2s; 
+        }
+        .skills h1:hover{
+          animation: Slidetop 2s ease forwards;
+            animation-delay: 2s;
+
+        }
+
+        #skill_experience .Education{
+          width: 40vw;
+          background-color: #1C1D24;
+          color: whitesmoke;
+          padding-top: 2em;
+          /* text-align: center; */
+          font-size: 20px;
+          height: 70vh;
+        }
+        #skill_experience .Education h1{
+          padding-left: 6em;
+          padding-bottom: 1em;
+          animation: Slidetop 2s ease forwards;
+            animation-delay: 2s; 
+        }
+
+        #skill_experience .Education .bca{
+          padding-left: 2em;
+          padding-bottom: 2em;
+          color: black;
+        } 
+        #skill_experience .Education .bca p{
+          color: aliceblue;
+          padding-left: 2em;
+        } 
+        #skill_experience .Education .bca .border{
+              border: 2px solid black;
+              border-radius: 20px;
+              padding: 0.5em;
+              width: 20%;
+              background-color: whitesmoke;
+        }
+        #skill_experience .Education .TCS{
+          padding-left: 2em;
+
+        }
+        
+        
+        #skill_experience .skills .items_h5{
+          padding-left: 3em;
+          height: 50vh;      
+          text-align: left;
+          color: black;
+        }
+        #skill_experience .skills .items_h5 .f_h1{
+          /* padding-bottom: 2em; */
+          
+          height: 3vh;
+          /* margin-bottom: 5em;   */
+          /* border: 2px solid red; */
+
+        }
+        #skill_experience .skills .items_h5 .f_h1 .u_div1{
+          height: 1vh;
+          /* width: 30vw; */
+          padding-top: 0.5em;
+          /* border: 2px solid red; */
+          background-color:black;
+          width: 100%;
+        }
+
+        #skill_experience .skills .items_h5 .u_div2{
+          height: 1vh;
+          padding-top: 0.5em;
+          width: 93%;
+          background-color:#ff4500;
+        }
+        #skill_experience .skills .items_h5 .u_div3{
+          height: 1vh;
+          padding-top: 0.5em;
+          width: 75%;
+          background-color: black;
+        }        
+        #skill_experience .skills .items_h5 .u_div4{
+          height: 1vh;
+          padding-top: 0.5em;
+          width: 80%;
+         
+          background-color: #ff4500;
+        }     
+        #skill_experience .skills .items_h5 .u_div5{
+          height: 1vh;
+          padding-top: 0.5em;
+          width: 50%;
+          background-color: black;
+        }
+        
+        #skill_experience .skills .items_h5 .u_div6{
+          height: 1vh;
+          padding-top: 0.5em;
+          width: 50%;
+        
+          background-color:#ff4500;
+        }    
+        
+
+        /* //page fortfolio style// */
+
+        .background_div{
+          background-color: #c6572f;
+          height: 100vh;
+          width: 70%;
+          padding-left: 4em;
+          margin-left: 14em;
+          padding-top: 1.5em;
+          margin-top: 3em;
+          display: flex;
+          /* overflow: visible; */
+        }
+
+        .project_h1{
+          padding-top: 0;
+          text-align: center;
+          font-size: 45px;
+          animation: Slideright 2s ease forwards;
+             animation-delay: 2s;
+          
+        }
+        .background_div .under_background1{
+          width: 40%;
+        }
+        .background_div .under_background1 .img1{
+          height: 250px;
+          width: 300px;
+        }
+        .background_div .under_background2{
+          width: 40%;
+        }
+        .background_div .under_background1 .img2{
+          margin-top: 0;
+          padding-top: 0;
+          height:60vh;
+        }
+        .background_div .under_background2 .img3{
+          height: 40vh;
+          height: 55vh;
+          width: 600px;
+        }
+        .background_div .under_background2 .img4{
+          padding-top:0;
+          margin-top: 0;
+          padding-left: 10em;  
+          height: 40vh;
+
+        }
+
+        #contact .location .ig1{
+          height: 80px;
+          width: 80px;
+        }
+        #contact .email .ig2{
+          height: 80px;
+          width: 60px;
+        }
+        #contact .number .ig3{
+          height: 80px;
+          width: 80px;
+        }
+        #contact h1{
+          padding-top: 0.5em;
+          font-size: 35px;
+        }
+        #contact p{
+          font-size: 20px;
+        }
+
+
+        #header .home{
+          padding-top: 15em;
+        }
+        .home .home-content{
+          padding-left: 4em;
+        }
+        .home-content span{
+          color:rgb(6, 132, 132);
+        }
+        .home .home-content .first{
+             color: rgb(25, 42, 25);
+             font-size: 35px;
+             opacity: 0;
+             animation: Slidetop 1s ease forwards;
+             animation-delay: .7s;
+           
+        }
+        .home .home-content .second{
+             color: rgb(25, 42, 25);
+             font-size: 35px;
+             opacity: 0;
+             animation: Slidetop 1s ease forwards;
+             animation-delay: .7s;
+           
+        }
+
+        .home .home-content h1{
+           font-size: 40px;
+           color: rgb(25, 42, 25);
+           font-weight: 600;
+           opacity: 0;
+           animation: Slideright 1s ease forwards;
+             animation-delay: 1s;
+
+           
+        }   
+        .home .social_media{
+          font-size: 30px;  
+          padding-bottom: 1em;
+          padding-top: 2em;
+          color: black;
+          /* opacity: 0;
+          animation: Slideright 1.5s ease forwards;
+          animation-delay: calc(.2s * var(--k)); */
+
+        }
+        .home .social_media img{
+          opacity: 0;
+          animation: Slideright 1s ease forwards;
+          animation-delay: calc(.2s * var(--k));
+
+        }
+        .home .social_media img:hover{
+          background-color: rgb(25, 42, 25);
+          transition: all 0.4s ease;
+          border-radius: 25px;
+          
+
+        }
+        .home .btn{
+          border: 2px solid #c6572f;
+          padding:1em;
+          border-radius: 30px;
+          background-color:#c6572f;
+          margin-top: 1.5em;
+          opacity: 0;
+          animation: SlideBootom 1s ease forwards;
+          animation-delay: 1s;
+          font-size: 18px;
+        }
+       
+
+        #contact{
+          background-color: bisque;
+          text-align: center;
+          margin-top: 4em;
+            width: 50%;
+          margin-left: 25em;
+        }
+        #contact .location{
+          height: 10vh;
+          /* width: 40px; */
+          padding-top: 1em;
+          padding-left: 2em;
+          display: flex;
+         
+
+        }
+        #contact .location h2{
+          /* display: inline; */
+         
+          margin-left: 3.8em;
+          padding-top: 1em;
+          margin-top: 0;
+          display: inline;
+          
+          height: 10vh;
+        }
+        
+        #contact .email{
+          height: 10vh; 
+          padding-top: 1em;
+          padding-left: 2.5em;
+          display: flex;
+          /* display: inline;    */    
+          
+        }
+        #contact .email h2{
+          margin-left: 0;
+          margin-left: 4.2em;
+          padding-top: 1em;
+          margin-top: 0;
+        }
+       
+       #contact .number{
+        height: 10vh;
+       
+          padding-left: 2em;
+          padding-bottom: 2em;
+          padding-top: 1.5em;
+          display: flex;
+
+       }
+       #contact .number h2{
+        margin-left: 0;
+          margin-left: 3.7em;
+          padding-top: 1em;
+          margin-top: 0;
+
+       }
+       footer{
+        margin-top: 2em;
+        padding-top: 1em;
+        background-color: black;
+        color: white;
+        height: 10vh;
+        font-size: 18px;
+        text-align: right;
+        padding-right: 2em;
+       }
+
+
+
+        /* //keyframes for logo// */
+      @keyframes Slideright {
+        0%{
+          transform:translateX(-100px);
+          opacity: 0;
+        }
+        100%{
+          transform:translateX(0);
+          opacity: 1;
+        }
+        
+      }
+
+      @keyframes Slideleft {
+        0%{
+          transform:translateX(100px);
+          opacity: 0;
+        }
+        100%{
+          transform:translateX(0);
+          opacity: 1;
+        }
+        
+      }  
+
+
+      /* //keyfram for top links/// */
+      @keyframes Slidetop {
+        0%{
+          transform:translateY(100px);
+          opacity: 0;
+        }
+        100%{
+          transform:translateY(0);
+          opacity: 1;
+        }       
+      }
+
+
+      @keyframes SlideBootom {
+        0%{
+          transform:translateY(-100px);
+          opacity: 0;
+        }
+        100%{
+          transform:translateY(0);
+          opacity: 1;
+        }       
+      }
+
+      @keyframes Zoomin {
+        0%{
+          transform:scale(0);
+          opacity: 0;
+        }
+        100%{
+          transform:scale(1);
+          opacity: 1;
+        }       
+      }
+
+
+
+      /* ///media qurey/// */
+
+    @media screen and (Max-Width :600px) {
+       
+       
+        #header .together{
+          
+            width: 100%;
+            
+        }
+         #header .together .logo{
+          width: 50%;
+         
+          padding-top: 0.5em;
+          padding-left: 1em;
+          padding-right: 0;
+          margin-right: 0;
+                
+        }
+        #header .together .logo a{
+          color: aliceblue;
+          height: 3vh;
+          width: 30px;
+        }
+        #header .together .navbar a{
+          width: 50%;
+         width: auto;
+         display: inline;
+         padding-left: 0;
+         margin-left: 0;
+         /* border: 2px solid red; */
+        }
+      }
+
+
+      @media screen and (Max-Width :600px){
+        #about_page{
+          /* width: 50%; */
+          display: inline-block;
+          
+        }
+        #about_page .second_part{
+          
+          padding-bottom: 3em;
+          margin-bottom:5em;
+        }
+        #about_page .mini_links{
+          padding-top: 0;
+          margin-top: 5em;
+          width: 50%;
+          /* display: inline; */
+          
+        }
+        
+        
+      }
+      @media screen and (Max-Width :600px){
+        #service_page{
+          /* width: 40%; */
+          display: inline-block;    
+          padding-left: 1.5em;
+          margin-left: 3em;
+          
+          /* padding-top: 3em; */
+          margin-top: 19em;
+          height: 40vh;
+          /* margin: 50%; */
+        }
+       
+        #service_page .service_container{
+          /* width: auto; */
+          display: inline;
+          /* background-color: white;           */
+          
+        
+      }
+      .service_container .first{
+        background-color: bisque;
+      }
+      .service_container .second{
+        background-color: bisque;
+      }
+      .service_container .third{
+        background-color: bisque;
+      }
+      .service_container .four{
+        background-color: bisque;
+      }
+
+         #service_page .service_h1{
+        /* border: 2px solid red; */
+        height: 10vh;
+        padding-left: 1em;
+        margin-left: 1em;
+           /* padding: 0; */
+           margin: 0;
+           
+      }
+      #service_page .service_p{
+        padding-bottom: 3em;
+        padding-top: 0;
+        padding-left: 0;
+        margin-left: 0;
+      }   
+    }
+
+
+    @media screen and (Max-Width :600px){
+        .background_div{
+          width: 50%;  
+          padding-left: 0;
+          margin-left: 0;    
+          display: inline-block; 
+          background-color: white;
+        }
+        .background_div .under_background1 .img1{
+          width: 400px; 
+          margin-left: 3em;        
+        }
+        .background_div .under_background1 .img2{
+          width: 400px;    
+          margin-left: 3em;   
+        }
+        .background_div .under_background2 .img3{
+          width: 400px;
+          padding-left: 0;
+          margin-left: 3em;
+        }
+
+        .background_div .under_background2 .img4{
+          width: 400px;
+          padding-left: 0;
+          margin-left: 3em;
+        }
+        
+      }
+      @media screen and (Max-Width :600px){
+        #contact{
+          width: 105%;
+          padding-left: 0;
+          margin-left: 3em;
+        }
+        footer{
+          width: 105%;
+        }
+
+      }   
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+  <main>
+    
+        <header id="header">
+       <div class="together">
+            <div class="logo">
+              <a href="#" class="logo">Janvi</a>
+            </div>
+
+           <nav class="navbar">
+             <a href="#header" style="--i:1;" class="a1  active">Home</a>
+             <a href="#about_page" style="--i:2;" class="a2">About</a>
+             <a href="#skill_experience" style="--i:3;" class="a3">skills</a>
+             <a href="#service_page" style="--i:4;" class="a4">portfolio</a>
+             <a href="#contact" style="--i:5;" class="a5">contact</a>
+           </nav>
+        </div>   
+
+       <section class="home">
+        <div class="home-content">
+          <h3 class="first">Hello, There</h3>
+          <h1>Janvi Vaghela</h1>
+          <h3 class="second">And I'm a <span class="Repeted_text"></span></h3>
+
+          <div class="cv">
+            <!-- <button  type="button"  onClick = "File()" class="btn">Download CV</button>
+             -->
+             <a href="../CV.pdf" class="btn" download>Download CV</a>
+          </div>
+
+          <div class="social_media">
+            <a href="#" style="--k:1;" class="a1"><img src="./img/icons8-facebook-48.png" alt=""></a>
+            <a href="#" style="--k:2;" class="a2"><img src="./img/icons8-twitter-48.png" alt=""></a>
+            <a href="www.linkedin.com/in/4876ba23b" style="--k:3;" class="a3"><img src="./img/icons8-linked-in-48.png" alt=""></a>
+            <a href="#" style="--k:4;" class="a4"><img src="./img/icons8-instagram-48.png" alt=""></a>
+          </div>
+
+          
+        </div>
+       </section>
+
+            
+
+       </header>
+
+       <div id="about_page">
+           <div class="first_part">
+                <img  class="image1"   src="img/new.jpg" alt="">                 
+           </div>     
+                
+          <div class="second_part">
+            <h2>Janvi Vaghela</h2> 
+            <h3>I Lead a Front-End engineer Role and  UI/UX Design  As well.</h3>
+            <p>I Design and Devlope the project and According customer's Requirement try my Level best to complete their Needs.<br/>I will Create mordern and stylish website Design With User Experience and meaningful Interface.</p>
+          
+          <div class="mini_links">
+            <ul class="one">
+              <li class="li1">Birthday  </li>                 
+              <li class="li2">Age      </li>    
+              <li class="li3">E-mail   </li>                   
+              <li class="li4">Freelance  </li>              
+            </ul>
+
+
+            <ul class="second">
+              <li class="li1"> 28th March 2003</li>
+              <li class="li2"> 21 Yr </li>
+              <li class="li3"> janvi2003vaghela@gmail.com</li>
+              <li class="li4"> Consider </li>
+            </ul>
+          </div>  
+
+          </div>   
+            
+       </div>
+
+      <!-- //service page// -->
+
+       <div id="service_page">
+
+           <h1 class="service_h1"> My Services</h1>
+           <p class="service_p">I design and devlope services for customers of all , specilizing in creating stylish , mordern websites , and services and online stores.</p>
+
+         <div class="service_container">
+                <div class="first">
+                      <img style="--j:1;"    class="ig1" src="./img/motivation.png" alt="">
+                      <h2>Devlopement</h2>
+                      <p>In the Devlopement Field i devlope the dynamiclly website which are also based on my Experience as well as the client's Requirement.</p>
+                </div>
+                <div class="second">
+                  <img   style="--j:2;"  src="./img/icons8-design-50.png" alt="">
+                  <h2>Designing</h2>
+                  <p>Web design identifies the goals of a website or webpage and promotes accessibility for all potential users. This process involves organizing content and images.</p>
+                </div>
+                <div class="third">
+                  <img style="--j:3;" src="./img/icons8-graphic-64.png" alt="">
+                  <h2>Graphic Design</h2>
+                  <p>which user interface design pattern is best, and how you can achieve maximum usability through implementing it, then step no further.</p>
+                </div>
+                <div class="four">
+                  <img style="--j:4;"  src="./img/icons8-wordpress-48.png" alt="">
+                  <h2>Wordpress Development</h2>
+                  <p>Now a days  Wordpress devlopement is very much in demanding Feild which is a devloping i can also devlope a website dynamiclly in Wordpress also use a plugins and user friendly themes.</p>
+                </div>
+          </div>           
+       
+        </div>
+
+
+         <!-- //skill pages --> 
+
+         <div id="skill_experience">
+            <div class="skills">
+                 <h1>My Skills</h1>
+              <div class="items_h5">              
+                <h5 class="f_h1">HTML5
+                  <div class="u_div1"></div>
+                </h5>
+                <h5 class="f_h2">CSS3
+                  <div class="u_div2"></div>
+                </h5>
+                <h5 class="f_h3">Tailwind
+                  <div class="u_div3"></div>
+                </h5>
+                <h5 class="f_h4">JavaScript
+                  <div class="u_div4"></div>
+                </h5>
+                <h5 class="f_h5">PHP
+                  <div class="u_div5"></div>
+                </h5>
+                <h5 class="f_h6 ">JAVA
+                  <div class="u_div6"></div>
+                </h5>
+              </div>   
+            </div>
+
+
+            <div class="Education">
+              <h1>Education</h1>
+              <div class="bca">
+                <div class="border">2020-2023</div>
+                <p>Bachelor's of computer Application</p>
+              </div>
+              <div class="bca">
+                <div class="border">2023</div>
+                <p>TCS Ion</p>
+              </div>
+              
+            </div>
+         </div>
+
+
+         <!-- //portfolio page/// -->
+
+         
+         <h1 class="project_h1">Our projects</h1> 
+
+         <div class="background_div">
+              <div class="under_background1">
+                <img class="img1" src="./img/Screenshot (245).png" alt="">
+                <img  class="img2" src="./img/Screenshot (248).png" alt="">
+                
+              </div>  
+              <div class="under_background2"> 
+                <img class="img3" src="./img/Screenshot (247).png" alt="">
+                
+                <img class="img4"  src="./img/Screenshot (246).png" alt="">
+                
+              </div>
+          
+         </div>
+
+
+
+
+         <div id="contact">
+            <h1>Get In Touch</h1>
+            <p>Always available for freelancing if the right project comes along. Feel free to connect me.</p>
+
+            <div class="location">
+              <img class="ig1" src="./img/icons8-location-48.png" alt="">
+              <h2>312/1 Maninagar , Gujrat ,India.</h2>
+              
+            </div>
+            <div class="email">
+              <img   class="ig2" src="./img/gmail (1).png" alt="">
+              <h2>janvi2003vaghela@gmail.com</h2>
+              
+            </div>
+            <div class="number">
+              <img  class="ig3" src="./img/phone-call.png" alt="">
+              <h2>+91 0000000000</h2>
+              
+            </div>
+         </div>
+
+
+         <footer> --
+          &copy; Copyrights Reserved | Designed by Janvi Vaghela. All Rights Reserved
+         </footer>
+
+
+
+
+    </main>   
+
+   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script> 
+   <script src="./javascript.js"></script>
+   <!-- <script>
+     function downloadFile() {
+            window.open("C:\Users\Janvi\Desktop\CV(janvi)");
+         }  
+   </script> -->
+
+
+</body>
+   
+   
+</html>
